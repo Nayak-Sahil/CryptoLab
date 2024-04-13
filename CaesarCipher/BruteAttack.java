@@ -11,7 +11,8 @@ public class BruteAttack {
             password = "";
             for (int j = 0; j < n; j++) {
                 int ascii = decrypt.charAt(j) - 'a';
-                int encAscii = (ascii - i) % 26;
+                // To handle reverse negative circular, it is important to add +26 then %26 with an entire answer ((ascii - i) % 26).
+                int encAscii = (((ascii - i) % 26) + 26) % 26; 
                 password += (char) (encAscii + 97);
             }
             // System.out.println(password);
