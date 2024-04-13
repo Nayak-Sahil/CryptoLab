@@ -17,11 +17,11 @@ RSA key generation involves the following steps:
 
 ## Find d's Value, Extended Euclidean Algorithm:
 - What is the Extended Euclidean Algorithm and why it is used here?
-  
-  ![EEA](https://github.com/Nayak-Sahil/CryptoLab/blob/main/RSA/Extended_Euclidean_Algorithm.jpg)
+
+  <img src="https://github.com/Nayak-Sahil/CryptoLab/blob/main/RSA/Extended_Euclidean_Algorithm.jpg" alt="EEA Process" width="400">
 - How to find the coefficient value? The algorithm that used in RSA to find the value of D is based on the following steps.
-  
-  ![EEA Steps](https://github.com/Nayak-Sahil/CryptoLab/blob/main/RSA/Multiplicative_Inverse_Under_Modulo.jpg)
+
+  <img src="https://github.com/Nayak-Sahil/CryptoLab/blob/main/RSA/Multiplicative_Inverse_Under_Modulo.jpg" alt="Multiplicative Inverse Process" width="400">
 
 ## 🔐 Encryption
 Each plaintext block is encrypted using the **public key (e, n)** by computing
