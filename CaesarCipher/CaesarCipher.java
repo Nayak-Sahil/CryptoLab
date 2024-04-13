@@ -22,8 +22,8 @@ public class CaesarCipher{
         
         int base = 97;
         for(int i = 0; i < n; i++){
-           int ascii = text.charAt(i) - 'a';
-           int encAscii = (ascii + key) % 26;
+           int ascii = text.charAt(i) - 'a'; // when plaintext is in small letter then subtract 'a' otherwise 'A'
+           int encAscii = (((ascii + key) % 26) + 26) % 26; // To handle reverse negative circular, it is important to add +26 then %26 with an entire answer.
            encText += (char) (encAscii + base);
         }
         
