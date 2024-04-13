@@ -16,7 +16,7 @@ The Playfair cipher is a cryptographic technique that encrypts pairs of letters 
     U   V   W   X   Z
    ```
 
-## 🔒 Encryption Process:
+## 🔒 Encryption Process
 1. The plaintext is divided into pairs of letters.
 2. Each pair is then encrypted using the Playfair algorithm, based on the positions of the letters in the matrix.
 3. Encryption rules:
@@ -25,12 +25,12 @@ The Playfair cipher is a cryptographic technique that encrypts pairs of letters 
     - Case 2: If both letters are in the same column, replace each letter with the letter below it (circularly).
     - Case 3: If the letters form a rectangle in the matrix, replace each letter with the letter on the same row but in the column of the other letter.
 
-## 🔓 Decryption Process:
+## 🔓 Decryption Process
 
 1. The ciphertext is divided into pairs of letters.
 3. Each pair is decrypted using the reverse process of encryption, based on the positions of the letters in the matrix.
 
-## 🛡️ Strengths:
+## 🛡️ Strengths
 
 1. Playfair cipher provides stronger encryption than simple substitution ciphers due to its handling of letter pairs.
 2. It is resistant to frequency analysis attacks due to the encryption of pairs instead of individual letters.
